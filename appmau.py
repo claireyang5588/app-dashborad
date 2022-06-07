@@ -34,23 +34,23 @@ pre_months =pre_month.strftime('%Y%m')
 first_day_of_pre_month = datetime.date(pre_month.year, pre_month.month, 1)
 first_day_of_pre_month_day =first_day_of_pre_month.strftime('%Y-%m-%d')
 
-df='https://raw.githubusercontent.com/claireyang5588/app-dashborad/main/df.csv?token=GHSAT0AAAAAABVLRZSKKJ2R7KGE54BKR4LEYU7LKDQ'
-df2='https://raw.githubusercontent.com/claireyang5588/app-dashborad/main/df2.csv?token=GHSAT0AAAAAABVLRZSKG3MKNAIZTJN75MAAYU7LKWQ'
-df3='https://raw.githubusercontent.com/claireyang5588/app-dashborad/main/df3.csv?token=GHSAT0AAAAAABVLRZSKR6Z4XCVVQHW24W42YU7LLGA'
-df4='https://raw.githubusercontent.com/claireyang5588/app-dashborad/main/df4.csv?token=GHSAT0AAAAAABVLRZSK7ZMTMYZPQRFOEZ5EYU7LODQ'
-df5='https://raw.githubusercontent.com/claireyang5588/app-dashborad/main/df5.csv?token=GHSAT0AAAAAABVLRZSL54NR4K572AQDDEN4YU7LNXA'
-df6='https://raw.githubusercontent.com/claireyang5588/app-dashborad/main/df6.csv?token=GHSAT0AAAAAABVLRZSKBNBKVA3AZMYK2HJ2YU7LOPQ'
-df7='https://raw.githubusercontent.com/claireyang5588/app-dashborad/main/df7.csv?token=GHSAT0AAAAAABVLRZSLQDN6LOJU6ETZJU36YU7LO2A'
+df='https://raw.githubusercontent.com/claireyang5588/app-dashborad/main/appdata/df.csv'
+df2='https://raw.githubusercontent.com/claireyang5588/app-dashborad/main/appdata/df2.csv'
+df3='https://raw.githubusercontent.com/claireyang5588/app-dashborad/main/appdata/df3.csv'
+df4='https://raw.githubusercontent.com/claireyang5588/app-dashborad/main/appdata/df4.csv'
+df5='https://raw.githubusercontent.com/claireyang5588/app-dashborad/main/appdata/df5.csv'
+df6='https://raw.githubusercontent.com/claireyang5588/app-dashborad/main/appdata/df6.csv'
+df7='https://raw.githubusercontent.com/claireyang5588/app-dashborad/main/appdata/df7.csv'
 
 df=pd.read_csv(df)
 df2=pd.read_csv(df2)
-df2['date'] = pd.to_datetime(df2['date'],dayfirst=True)
 df3=pd.read_csv(df3)
 df4=pd.read_csv(df4)
 df5=pd.read_csv(df5)
 df6=pd.read_csv(df6)
-df6['使用年月']=df6['使用年月'].astype(str)
 df7=pd.read_csv(df7)
+df2['date'] = pd.to_datetime(df2['date'],dayfirst=True)
+df6['使用年月']=df6['使用年月'].astype(str)
 df7['開通年月']=df7['開通年月'].astype(str)
 
 
