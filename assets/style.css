@@ -36,7 +36,7 @@ body {
 .create_container2 {
   position:absolute;
   top:118px;
-  left:60%;
+  right:0px;
   
 }
 
@@ -59,7 +59,7 @@ font-size: 20px;
   font-size: 20px;
   position:absolute;
   top:85px;
-  left:400px;
+  left:60%;
 }
 
 .flex-display {
