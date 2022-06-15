@@ -257,7 +257,7 @@ app.layout = html.Div([
                     id='line',
                     figure=fig5),
  
-        ], className="create_container six columns"),
+        ], className="create_container eleven columns"),
 
         ], className="row flex-display"),
     html.Div([
@@ -290,7 +290,7 @@ app.layout = html.Div([
                        )],className="create_container2"),
               html.Div(dcc.Graph(id='graph',figure={})),
 
-        ], className="create_container seven columns"),
+        ], className="create_container six columns"),
         
         html.Div([html.H3(children='Category Top10',
                     style={
