@@ -302,7 +302,7 @@ app.layout = html.Div([
             id='bar-chart',
             figure=fig2),
  
-        ], className="create_container seven columns"),
+        ], className="create_container five columns"),
 
         ], className="row flex-display"),
 
