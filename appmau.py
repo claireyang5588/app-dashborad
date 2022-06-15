@@ -257,7 +257,7 @@ app.layout = html.Div([
                     id='line',
                     figure=fig5),
  
-        ], className="create_container eleven columns"),
+        ], className="create_container six columns"),
 
         ], className="row flex-display"),
     html.Div([
