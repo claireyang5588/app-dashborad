@@ -58,7 +58,9 @@ df2['date'] = pd.to_datetime(df2['date'],dayfirst=True)
 df6['使用年月']=df6['使用年月'].astype(str)
 df7['開通年月']=df7['開通年月'].astype(str)
 
-
+df2['Year']=df2['date'].dt.year
+df2['Month']=df2['date'].dt.month
+df2['Day']=df2['date'].dt.day
 
 #當月活躍用戶數(計算到前一天)
 month_total=df[df['登入年月']==int(month)].iloc[0]['使用門號數']
